@@ -14,9 +14,7 @@ const userRoutes = require('./routes/userRoutes');
 const candidateRoutes = require('./routes/candidateRoutes');
 app.use('/user', userRoutes);
 app.use('/candidate', candidateRoutes);
-app.get('/', (req, res) => {
-    res.send('Welcome to Express!');
-});
+
 
 app.listen(process.env.PORT, ()=>{
     console.log(`listening on port ${process.env.PORT}`);
