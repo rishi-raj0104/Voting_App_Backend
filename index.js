@@ -6,7 +6,6 @@ require('dotenv').config();
 const bodyParser = require('body-parser'); 
 app.use(cors({
     origin: ['http://localhost:5173', 'https://voting-app-kappa-inky.vercel.app'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, 
   }));
 app.use(bodyParser.json());
