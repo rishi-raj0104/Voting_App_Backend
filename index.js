@@ -21,3 +21,6 @@ app.get('/', (req, res) => {
 app.listen(process.env.PORT, ()=>{
     console.log(`listening on port ${process.env.PORT}`);
 })
+app.use('/', (req, res) => {
+    res.send('Welcome to world of routes');
+})
